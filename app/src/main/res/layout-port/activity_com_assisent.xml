@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_padding_top"
+    android:paddingLeft="@dimen/activity_padding_bottom"
+    android:paddingRight="@dimen/activity_padding_left"
+    android:paddingTop="@dimen/activity_padding_right"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/log_container_weight"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/log"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_bg"
+                android:clickable="false"
+                android:inputType="none"
+                android:editable="false"
+                android:gravity="top|left"
+                android:longClickable="false"
+                android:textSize="@dimen/log_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/settings_title"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/save_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/save_log_title"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/clear_title"
+                    android:textSize="@dimen/button_text_size" />
+
+                <CheckBox
+                    android:id="@+id/auto_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auto_clear_title"
+                    android:textSize="@dimen/check_box_text_size" />
+
+                <EditText
+                    android:id="@+id/max_line"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/max_line_margin_left"
+                    android:background="@drawable/edit_text_bg"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned"
+                    android:singleLine="true"
+                    android:hint="@string/show_max_line"
+                    android:textSize="@dimen/max_line_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/com12_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/double_container_margin_right"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <include layout="@layout/command_layout"
+                android:id="@+id/com1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/item_container_margin_right" />
+
+            <include layout="@layout/command_layout"
+                android:id="@+id/com2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/item_container_margin_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com34_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/double_container_margin_right"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <include layout="@layout/command_layout"
+                android:id="@+id/com3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/item_container_margin_right" />
+
+            <include layout="@layout/command_layout"
+                android:id="@+id/com4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/item_container_margin_right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

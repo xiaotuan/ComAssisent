@@ -1,11 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="android:Theme.Holo.NoActionBar">
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle</item>
+    </style>
+
+    <style name="SpinnerItemStyle" parent="android:Widget.Holo.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/SpinnerItemTextAppearance</item>
+    </style>
+
+    <style name="SpinnerItemTextAppearance" parent="android:TextAppearance.Holo.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SpinnerDropDownItemStyle" parent="android:Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textAppearance">@style/SpinnerItemTextAppearance</item>
+    </style>
+
+    <style name="OtherTheme" parent="android:Theme.Holo">
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle</item>
     </style>
 
 </resources>
