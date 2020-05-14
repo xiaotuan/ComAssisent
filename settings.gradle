@@ -1,0 +1,2 @@
+rootProject.name='ComAssisent'
+include ':app'
