@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="log_format">
+        <item>串口数据</item>
+        <item>接收或发送状态 + 串口数据</item>
+        <item>时间 + 接收或发送状态 + 串口数据</item>
+        <item>[串口名称] + 串口数据</item>
+        <item>[串口名称] + 接收或发送状态 + 串口数据</item>
+        <item>[串口名称] + 时间 + 接收或发送状态 + 串口数据</item>
+    </string-array>
+
+</resources>

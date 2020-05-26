@@ -30,12 +30,6 @@ static const char *TAG="serial_port";
 #define LOGD(fmt, args...) __android_log_print(ANDROID_LOG_DEBUG, TAG, fmt, ##args)
 #define LOGE(fmt, args...) __android_log_print(ANDROID_LOG_ERROR, TAG, fmt, ##args)
 
-#ifndef _Included_com_qty_comassisent_serialport_SerialPort
-#define _Included_com_qty_comassisent_serialport_SerialPort
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 static speed_t getBaudrate(jint baudrate)
 {
   switch(baudrate) {
@@ -164,8 +158,3 @@ JNIEXPORT void JNICALL Java_com_qty_comassisent_serialport_SerialPort_close
 	LOGD("close(fd = %d)", descriptor);
 	close(descriptor);
 }
-
-#ifdef __cplusplus
-}
-#endif
-#endif

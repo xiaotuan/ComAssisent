@@ -3,5 +3,6 @@
 
     <color name="window_background">#5E5E5E</color>
     <color name="white">#ffffff</color>
+    <color name="log_header">#2196F3</color>
 
 </resources>

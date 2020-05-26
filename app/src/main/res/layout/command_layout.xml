@@ -4,24 +4,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/cmd"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLines="1"
-        android:lines="1"
-        android:background="@drawable/edit_text_bg"
-        android:gravity="top|left"
-        android:textColor="@color/white"
-        android:textSize="@dimen/cmd_edit_text_size" />
+        android:orientation="horizontal">
 
-    <Spinner
-        android:id="@+id/port"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="@dimen/item_margin"
-        android:background="@drawable/spinner_bg" />
+        <EditText
+            android:id="@+id/cmd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:hint="@string/enter_send_content"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="top|left"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/cmd_edit_text_size" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:text="@string/send_title"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/inner_cmd_container"
@@ -54,6 +63,14 @@
 
     </LinearLayout>
 
+    <Spinner
+        android:id="@+id/port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/item_margin"
+        android:background="@drawable/spinner_bg" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,7 +78,7 @@
         android:orientation="horizontal">
 
         <Spinner
-            android:id="@+id/baud_rade"
+            android:id="@+id/baud_rate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -90,6 +107,7 @@
             android:textSize="@dimen/textview_text_size"/>
 
         <RadioGroup
+            android:id="@+id/send_radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -125,10 +143,12 @@
             android:layout_weight= "1"
             android:maxLines="1"
             android:lines="1"
+            android:singleLine="true"
+            android:hint="@string/line_break"
             android:background="@drawable/edit_text_bg"
             android:gravity="top|left"
             android:layout_gravity="center_vertical"
-            android:textSize="@dimen/cmd_edit_text_size" />
+            android:textSize="@dimen/edit_text_size" />
     </LinearLayout>
 
     <LinearLayout
@@ -145,6 +165,7 @@
             android:textSize="@dimen/textview_text_size"/>
 
         <RadioGroup
+            android:id="@+id/receive_radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -180,11 +201,12 @@
             android:layout_weight="1"
             android:maxLines="1"
             android:lines="1"
+            android:singleLine="true"
+            android:hint="@string/line_break"
             android:background="@drawable/edit_text_bg"
             android:gravity="top|left"
             android:layout_gravity="center_vertical"
-            android:textColor="@color/white"
-            android:textSize="@dimen/cmd_edit_text_size" />
+            android:textSize="@dimen/edit_text_size" />
     </LinearLayout>
 
     <LinearLayout
@@ -197,12 +219,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:hint="@string/send_interval_time"
             android:background="@drawable/edit_text_bg"
             android:imeOptions="actionDone"
             android:inputType="numberSigned"
             android:singleLine="true"
-            android:textColor="@color/white"
-            android:textSize="@dimen/cmd_edit_text_size" />
+            android:textSize="@dimen/edit_text_size" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -216,16 +238,12 @@
             android:id="@+id/auto_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
             android:text="@string/auto_title"
             android:textColor="@color/white"
             android:textSize="@dimen/check_box_text_size" />
 
-        <Button
-            android:id="@+id/send"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:text="@string/send_title"
-            android:textSize="@dimen/button_text_size" />
     </LinearLayout>
 
 </LinearLayout>

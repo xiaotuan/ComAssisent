@@ -1,0 +1,40 @@
+[
+  {
+    "name": "init",
+    "commands": [
+      {
+        "command": "AT",
+        "is_show_txt": true,
+        "delay": 0
+      }, {
+        "command": "AT^SIMST?",
+        "is_show_txt": true,
+        "delay": 1000
+      }, {
+        "command": "AT+CGCLASS=\"A\"",
+        "is_show_txt": true,
+        "delay": 500
+      }
+    ]
+  },
+  {
+    "name": "Dial",
+    "commands": [
+      {
+        "command": "ATD18123786266;",
+        "is_show_txt": true,
+        "delay": 0
+      }
+    ]
+  },
+  {
+    "name": "HandUp",
+    "commands": [
+      {
+        "command": "AT+CHUP",
+        "is_show_txt": true,
+        "delay": 500
+      }
+    ]
+  }
+]

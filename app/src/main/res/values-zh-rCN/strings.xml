@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">串口助手</string>
+
+    <string name="windows_title">窗口数量</string>
+    <string name="save_log_title">保存</string>
+    <string name="clear_title">清除</string>
+    <string name="setting_font">字体</string>
+    <string name="auto_clear_title">自动清除</string>
+    <string name="max_line">最大行数</string>
+    <string name="select_inner_cmd_file_title">· · ·</string>
+    <string name="send_title">发送</string>
+    <string name="send_format_title">"发送: "</string>
+    <string name="txt_title">字符</string>
+    <string name="hex_title">十六进制</string>
+    <string name="line_break_title">"中止符: "</string>
+    <string name="receive_format_title">"接收: "</string>
+    <string name="time_unit_title">毫秒</string>
+    <string name="auto_title">自动发送</string>
+    <string name="log_format">日志格式</string>
+    <string name="save_file_tip">文件保存到：%s</string>
+    <string name="save_file_fail">保存失败</string>
+    <string name="select_window_count">选择窗口数量</string>
+    <string name="permission_denied">权限拒绝</string>
+    <string name="no_data_save">没有数据要保存</string>
+    <string name="can_not_save_file">无法保存文件</string>
+    <string name="select_log_format">选择日志格式</string>
+    <string name="send_data_title">\"发送数据: \"</string>
+    <string name="receive_data_title">\"接收数据: \"</string>
+    <string name="serial_port_prefix">串口-</string>
+    <string name="stop_title">停止</string>
+    <string name="select_cmd_file">请选择命令</string>
+    <string name="line_break_limit">中止符必须是十六进制，多个以空格隔开</string>
+    <string name="delay_time_limit">数值不正确或超出范围</string>
+    <string name="enter_send_content">请输入发送内容</string>
+    <string name="line_break">行间隔符</string>
+    <string name="send_interval_time">间隔发送时间</string>
+
+</resources>

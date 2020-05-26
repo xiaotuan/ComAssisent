@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 发送数据的分隔符, 十六进制字符，多个字符使用空格分开，默认: \n\r -->
+    <string name="default_send_line_break">"0D 0A"</string>
+    <!-- 接收数据的分隔符, 十六进制字符，多个字符使用空格分开，默认: \n\r -->
+    <string name="default_receive_line_break">"0D 0A"</string>
+
+    <!-- 默认窗口数量，可选 1、2、3、4 -->
+    <integer name="default_window_count">4</integer>
+    <!-- 默认日志最大行数 -->
+    <integer name="default_max_line">500</integer>
+    <!-- 自动发送时间间隔，单位：毫秒 -->
+    <integer name="default_auto_send_interval">500</integer>
+    <!-- 日志视图文字大小 -->
+    <integer name="default_log_text_size">12</integer>
+    <!-- 默认日志格式下标 -->
+    <integer name="default_log_fomart_index">3</integer>
+    <!-- 最大的日志视图文字大小 -->
+    <integer name="max_log_text_size">48</integer>
+    <!-- 最小的日志视图文字大小 -->
+    <integer name="min_log_text_size">8</integer>
+    <!-- 默认频率 -->
+    <integer name="default_baud_rate">115200</integer>
+
+    <!-- 是否开启自动清理日志 -->
+    <bool name="default_auto_clear">true</bool>
+    <!-- 发送数据是否转换成字符显示，如果设置了显示字符，必须关闭显示十六进制选项 -->
+    <bool name="default_send_show_text">false</bool>
+    <!-- 接收数据是否转换成字符显示，如果设置了显示字符，必须关闭显示十六进制选项 -->
+    <bool name="default_receive_show_text">false</bool>
+    <!-- 是否开启自动发送功能 -->
+    <bool name="default_auto_send">false</bool>
+
+
+</resources>

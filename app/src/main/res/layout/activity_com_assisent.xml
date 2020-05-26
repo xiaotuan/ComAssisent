@@ -35,53 +35,74 @@
                 android:longClickable="false"
                 android:textSize="@dimen/log_text_size" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ScrollView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:overScrollMode="never"
+                android:scrollbars="none">
 
-                <Button
-                    android:id="@+id/settings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/button_height"
-                    android:text="@string/settings_title"
-                    android:textSize="@dimen/button_text_size" />
-
-                <Button
-                    android:id="@+id/save_log"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/button_height"
-                    android:text="@string/save_log_title"
-                    android:textSize="@dimen/button_text_size" />
-
-                <Button
-                    android:id="@+id/clear"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/button_height"
-                    android:text="@string/clear_title"
-                    android:textSize="@dimen/button_text_size" />
-
-                <CheckBox
-                    android:id="@+id/auto_clear"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/auto_clear_title"
-                    android:textSize="@dimen/check_box_text_size" />
+                    android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/max_line"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginLeft="@dimen/max_line_margin_left"
-                    android:background="@drawable/edit_text_bg"
-                    android:imeOptions="actionDone"
-                    android:inputType="numberSigned"
-                    android:singleLine="true"
-                    android:hint="设置最大显示行数"
-                    android:textSize="@dimen/max_line_text_size" />
+                    <Button
+                        android:id="@+id/windows"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/windows_title"
+                        android:textSize="@dimen/button_text_size" />
 
-            </LinearLayout>
+                    <Button
+                        android:id="@+id/save_log"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/save_log_title"
+                        android:textSize="@dimen/button_text_size" />
+
+                    <Button
+                        android:id="@+id/clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/clear_title"
+                        android:textSize="@dimen/button_text_size" />
+
+                    <Button
+                        android:id="@+id/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/setting_font"
+                        android:textSize="@dimen/button_text_size" />
+
+                    <Button
+                        android:id="@+id/log_format"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/log_format"
+                        android:textSize="@dimen/button_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/auto_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auto_clear_title"
+                        android:textSize="@dimen/check_box_text_size" />
+
+                    <EditText
+                        android:id="@+id/max_line"
+                        android:layout_width="@dimen/max_line_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/max_line_margin_left"
+                        android:background="@drawable/edit_text_bg"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberSigned"
+                        android:singleLine="true"
+                        android:hint="@string/max_line"
+                        android:textSize="@dimen/edit_text_size" />
+
+                </LinearLayout>
+
+            </ScrollView>
 
         </LinearLayout>
 
@@ -101,12 +122,14 @@
             android:orientation="horizontal">
 
             <include layout="@layout/command_layout"
+                android:id="@+id/com_a"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/item_container_margin_right" />
 
             <include layout="@layout/command_layout"
+                android:id="@+id/com_b"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -122,12 +145,14 @@
             android:orientation="horizontal">
 
             <include layout="@layout/command_layout"
+                android:id="@+id/com_c"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/item_container_margin_right" />
 
             <include layout="@layout/command_layout"
+                android:id="@+id/com_d"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

@@ -1,74 +1,38 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">ComAssisent</string>
-    <string name="send_title">Send</string>
 
+    <string name="windows_title">Windows</string>
+    <string name="save_log_title">Save</string>
+    <string name="clear_title">Clear</string>
+    <string name="setting_font">Font</string>
+    <string name="auto_clear_title">Auto Clear</string>
+    <string name="max_line">Max lines</string>
     <string name="select_inner_cmd_file_title">· · ·</string>
+    <string name="send_title">Send</string>
     <string name="send_format_title">"Send: "</string>
-    <string name="receive_format_title">"Receive: "</string>
     <string name="txt_title">TXT</string>
     <string name="hex_title">HEX</string>
     <string name="line_break_title">"Break: "</string>
-    <string name="auto_title">Auto</string>
+    <string name="receive_format_title">"Receive: "</string>
     <string name="time_unit_title">ms</string>
-    <string name="auto_send_time_default">500</string>
-
-
-
-    <string name="settings_title">Settings</string>
-    <string name="clear_title">Clear</string>
-    <string name="auto_clear_title">Auto Clear</string>
-    <string name="max_line_default">500</string>
-
-
-
-
-    <string name="max_line_error">Illegal number of lines</string>
-    <string name="command_not_allow_empty">Instruction cannot be empty</string>
-    <string name="send_tag">"Send"</string>
-    <string name="receive_tag">"Receive"</string>
-    <string name="serial_port_already_opened">Serial port already opened</string>
-    <string name="open_serial_port_fail">Open fail</string>
+    <string name="auto_title">Auto</string>
+    <string name="log_format">Format</string>
+    <string name="save_file_tip">Save to：%s</string>
+    <string name="save_file_fail">Save fail</string>
+    <string name="select_window_count">Select window count</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="no_data_save">No data save</string>
+    <string name="can_not_save_file">"Can't save data"</string>
+    <string name="select_log_format">Select log fomart</string>
+    <string name="send_data_title">"Send data: "</string>
+    <string name="receive_data_title">"Receive data: "</string>
+    <string name="serial_port_prefix">COM-</string>
     <string name="stop_title">Stop</string>
-    <string name="invalid_hex_string">Invalid hex string</string>
-    <string name="interface_refresh_time_title">Interface refresh time</string>
-    <string name="serial_port_count_title">Serial ports</string>
-    <string name="default_com_count_summary">Four ports</string>
-    <string name="default_interface_refresh_time_summary">50 ms</string>
-    <string name="setting_interace_refresh_time_title">Set refresh time</string>
-    <string name="settings_fail">Setting fail</string>
-    <string name="command_list_title">Command List</string>
-    <string name="custom_command_sequence">Custom command sequence</string>
-    <string name="delete_title">Delete</string>
-    <string name="add_title">Add</string>
-    <string name="command_editor_title">Command Editor</string>
-    <string name="done_title">Done</string>
-    <string name="name_title">Name:</string>
-    <string name="serial_port_title">Serial Port:</string>
-    <string name="baud_rate_title">Baud Rate:</string>
-    <string name="repeat_title">Repeat:</string>
-    <string name="cancel">Cancel</string>
-    <string name="add">Add</string>
-    <string name="update">Update</string>
-    <string name="not_found_command">Command not found</string>
-    <string name="name_not_allow_empty">Name not allow empty</string>
-    <string name="serial_port_not_allow_empty">Serial port not allow empty</string>
-    <string name="illegal_baud_rate">Illegal baud rate</string>
-    <string name="update_success">Update success</string>
-    <string name="update_fail">Update fail</string>
-    <string name="insert_success">Insert success</string>
-    <string name="insert_fail">Insert fail</string>
-    <plurals name="delete_counts">
-        <item quantity="one">One item deleted</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> items deleted</item>
-    </plurals>
-    <string name="tip">"Tip：\n\t(1)Multiple commands are separated by line breaks, with multiple parameters of a command separated by |\n\t(2)Command format parameter description\n\t\tCommand|whether to send hex | add line break | command execution time\n\t(3)List as:\n\t\tAT|false|true|500\n\t\tAT^SIMST?|false|true|1000</string>
-    <string name="conver_hex_to_string">Convert hex</string>
-    <string name="conver_hex_to_string_summary">Convert hexadecimal results to strings</string>
-    <string name="save_log_title">Save</string>
-    <string name="no_log_save_tip">No logs to save</string>
-    <string name="edit_log_file_name">Edit log file name</string>
-    <string name="log_file_path">Save to %s</string>
-    <string name="save_log_success">Save success</string>
-    <string name="save_log_fail">Save fail</string>
-    <string name="show_max_line">最大行数</string>
+    <string name="select_cmd_file">Select CMD</string>
+    <string name="line_break_limit">The stop character must be hexadecimal, multiple separated by spaces</string>
+    <string name="delay_time_limit">Value is incorrect or out of range</string>
+    <string name="enter_send_content">Enter send content</string>
+    <string name="line_break">Line break</string>
+    <string name="send_interval_time">Send interval time</string>
+
 </resources>

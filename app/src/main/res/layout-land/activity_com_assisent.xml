@@ -47,10 +47,10 @@
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/settings"
+                        android:id="@+id/windows"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/button_height"
-                        android:text="@string/settings_title"
+                        android:text="@string/windows_title"
                         android:textSize="@dimen/button_text_size" />
 
                     <Button
@@ -65,6 +65,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/button_height"
                         android:text="@string/clear_title"
+                        android:textSize="@dimen/button_text_size" />
+
+                    <Button
+                        android:id="@+id/font"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/setting_font"
+                        android:textSize="@dimen/button_text_size" />
+
+                    <Button
+                        android:id="@+id/log_format"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:text="@string/log_format"
                         android:textSize="@dimen/button_text_size" />
 
                     <CheckBox
@@ -83,8 +97,8 @@
                         android:inputType="numberSigned"
                         android:imeOptions="actionDone"
                         android:singleLine="true"
-                        android:hint="@string/show_max_line"
-                        android:textSize="@dimen/max_line_text_size" />
+                        android:hint="@string/max_line"
+                        android:textSize="@dimen/edit_text_size" />
 
                 </LinearLayout>
             </ScrollView>
@@ -106,14 +120,14 @@
             android:orientation="horizontal">
 
             <include layout="@layout/command_layout"
-                android:id="@+id/com1"
+                android:id="@+id/com_a"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/item_container_margin_right" />
 
             <include layout="@layout/command_layout"
-                android:id="@+id/com2"
+                android:id="@+id/com_b"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
@@ -129,14 +143,14 @@
             android:orientation="horizontal">
 
             <include layout="@layout/command_layout"
-                android:id="@+id/com3"
+                android:id="@+id/com_c"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/item_container_margin_right" />
 
             <include layout="@layout/command_layout"
-                android:id="@+id/com4"
+                android:id="@+id/com_d"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />

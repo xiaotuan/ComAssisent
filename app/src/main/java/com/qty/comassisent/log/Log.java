@@ -2,7 +2,7 @@ package com.qty.comassisent.log;
 
 public class Log {
 
-    private static final String TAG = "Comassisent";
+    private static final String TAG = "ComAssisent";
 
     private static final boolean DEBUG = true;
     private static final boolean INFO = true;
